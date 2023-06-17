@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Car Parking Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Welcome to our Car Parking Website</h1>
+
+<!-- about -->
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</nav>
+
+
+	</header>
+	<section>
+		<h2>Book a Parking Spot</h2>
+		<form id="booking-form">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required><br><br>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required><br><br>
+			<label for="phone">Phone:</label>
+			<input type="text" id="phone" name="phone" required><br><br>
+			<label for="car">Car Make and Model:</label>
+			<input type="text" id="car" name="car" required><br><br>
+			<label for="date">Date:</label>
+			<input type="date" id="date" name="date" required><br><br>
+			<input type="submit" value="submit">
+		</form>
+	</section>
+	<section>
+		<h2>Current Bookings</h2>
+		<table id="booking-table">
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Phone</th>
+				<th>Car</th>
+				<th>Date</th>
+				<th>Amount Paid</th>
+				<th>Action</th>
+			</tr>
+			<!-- Booking data will be dynamically inserted here -->
+		</table>
+	</section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+	<footer>
+		<p>&copy; 2023 Car Parking Website</p>
+	</footer>
+	<script src="script.js"></script>
+	<style>
+        a:link {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: pink;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: pink;
+  background-color: transparent;
+  text-decoration: underline;
+}
+		body {
+			background-image: url("ph.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+
+		section {
+			background-color: rgba(255, 255, 255, 0.8);
+			padding: 20px;
+			margin: 20px auto;
+			width: 80%;
+			max-width: 800px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
+	</style>
+</body>
+</html>
